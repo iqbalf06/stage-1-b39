@@ -12,6 +12,8 @@
     "hbs": "^4.2.0"
   },
   "keywords": [],
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
   "description": ""
 }

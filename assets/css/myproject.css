@@ -6,29 +6,31 @@
 }
 
 
-/* Blog Form */
-.blog-form {
+
+
+/* project Form */
+.project-form {
   padding: 50px 0;
   display: flex;
   justify-content: center;
 }
 
 
-.blog-form .form-container {
+.project-form .form-container {
   width: 500px;
 }
 
-.blog-form .form-container h1 {
+.project-form .form-container h1 {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.blog-form form label {
+.project-form form label {
   font-size: 20px;
   font-weight: 400;
 }
 
-.blog-form form input,
+.project-form form input,
 textarea,
 select {
   width: 100%;
@@ -43,39 +45,39 @@ select {
   box-shadow: 0px 5px 18px 0px rgb(214, 213, 213);
 }
 
-.blog-form .date {
+.project-form .date {
   display: flex;
   }
   
-  .blog-form .startdate {
+  .project-form .startdate {
    margin-right: 15px; 
   }
 
-  .blog-form form textarea {
+  .project-form form textarea {
     height: 100px;
   }
 
-  .blog-form .input-checkbox {
+  .project-form .input-checkbox {
     width: 10px;
     zoom: 1.5;
   }
   
   
-  .blog-form .checkbox {
+  .project-form .checkbox {
     display: flex;
     margin-top: 10px;
   }
   
-  .blog-form .checkbox-left {
+  .project-form .checkbox-left {
    flex: 50%; 
   }
   
-  .blog-form .checkbox-right {
+  .project-form .checkbox-right {
     flex: 50%; 
    }
 
 
-   .blog-form form .input-blog-image-group {
+   .project-form form .input-project-image-group {
     width: 100%;
     font-size: 20px;
     font-weight: 400;
@@ -90,24 +92,24 @@ select {
   }
   
   
-  .blog-form form .input-blog-image-group label p {
+  .project-form form .input-project-image-group label p {
     font-size: 15px;
   }
   
-  .blog-form form .input-blog-image-group label {
+  .project-form form .input-project-image-group label {
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
-  .blog-form form .button-group {
+  .project-form form .button-group {
     text-align: right;
 
     
   }
   
-  .blog-form form button {
+  .project-form form button {
     margin-top: 50px;
     padding: 8px 20px;
     font-size: 17px;
@@ -118,14 +120,14 @@ select {
     cursor: pointer;
   }
 
-  /* Blog list */
+  /* project list */
 
-.blog-list {
+.project-list {
   display: grid;
   grid-template-columns: auto auto auto;
 }
 
-.blog .blog-list-item {
+.project .project-list-item {
   margin: 80px 80px 80px 80px;
   width: 350px;
   height: 430px;
@@ -137,7 +139,7 @@ select {
 }
 
   
-.blog-image img {
+.project-image img {
   object-fit: cover;
   width: 100%;
   border-radius: 8px;
@@ -152,7 +154,7 @@ select {
   
 }
   
-.detail-blog-content {
+.detail-project-content {
   font-size: small;
   color: grey;
 }
@@ -204,25 +206,25 @@ select {
 }
 
 
-/* Blog Detail */
-.blog-detail h1 {
+/* project Detail */
+.project-detail h1 {
 text-align: center;
 margin-top: 50px;
 margin-bottom: 50px;
 }
 
-.blog-detail .blog-detail-header {
+.project-detail .project-detail-header {
   display: flex;
   width: 100%;
   margin-bottom: 50px;
 }
 
-.blog-detail .blog-detail-header .image-detail {
+.project-detail .project-detail-header .image-detail {
   flex:60%;
 
 }
 
-.blog-detail .blog-detail-header img {
+.project-detail .project-detail-header img {
   width: 900px;
   height: 500px;
   padding-left: 50px;
@@ -230,7 +232,7 @@ margin-bottom: 50px;
 }
 
 
-.blog-detail .blog-detail-header .detail-description {
+.project-detail .project-detail-header .detail-description {
   flex:40%;
   
   padding-left: 50px;
@@ -268,13 +270,13 @@ font-size: 40;
   flex:50%;
 }
 
-.blog-detail-container {
+.project-detail-container {
   padding-left: 50px;
   padding-right: 50px;
   text-align: justify;
   padding-bottom: 50px;
 }
 
-.blog-detail-container p {
+.project-detail-container p {
   line-height: 1.6;
 }

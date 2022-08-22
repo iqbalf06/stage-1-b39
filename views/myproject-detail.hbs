@@ -7,7 +7,7 @@
   </head>
   <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg bg-warning bg-opacity-10">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="/assets/images/logo.png" alt="logo">
@@ -33,17 +33,17 @@
     </nav>
 
     <!-- Blog -->
-    {{id}}
-    <div class="blog-detail">
-      <h1>{{title}}</h1>
-      <div class="blog-detail-header">
+
+    <div class="project-detail">
+      <h1>{{data.title}}</h1>
+      <div class="project-detail-header">
         <div class="image-detail">
         <img src="/assets/images/img-card1.jpg" alt="detail"> 
         </div>
         <div class="detail-description">
-         <p class="title-description"> Duration </p>
-         <p class="icon-desc"> <i class="fa-solid fa-calendar-days"></i> 12 Jan 2021 - 11 Feb 2021 </p>
-         <p class="icon-desc"> <i class="fa-solid fa-clock-rotate-left"></i> 1 month </p>
+         <p class="title-description"> Duration</p>
+         <p class="icon-desc"> <i class="fa-solid fa-calendar-days"></i> {{data.startdate}} - {{data.enddate}} </p>
+         <p class="icon-desc"> <i class="fa-solid fa-clock-rotate-left"></i>  {{data.duration}}</p>
          
          <p class="title-description2"> Technologies </p>
          <div class="title-icon">
@@ -60,28 +60,11 @@
       </div>
        
 
-        <div class="blog-detail-container">
+        <div class="project-detail-container">
         <p>
-          {{content}}
+          {{data.content}}
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias obcaecati delectus, optio possimus officiis suscipit quod iste aliquam. Similique accusamus veritatis modi sapiente provident ipsam minima ut est nam dicta et excepturi vero, praesentium, autem, numquam magnam aliquid! Explicabo voluptates aperiam adipisci recusandae ipsum tenetur deserunt doloremque aspernatur voluptatibus neque pariatur, illum repellat vero fugiat reprehenderit assumenda beatae aliquid perspiciatis at. Obcaecati, earum iure! Corporis delectus ducimus maiores ut explicabo illo atque fugiat repellendus. Repellendus, distinctio optio maxime nihil quia ex quod dicta blanditiis sint deserunt consequatur iusto minima magnam dolore labore excepturi minus, laboriosam similique explicabo officiis quasi.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias obcaecati delectus, optio possimus officiis suscipit quod iste aliquam. Similique accusamus veritatis modi sapiente provident ipsam minima ut est nam dicta et excepturi vero, praesentium, autem, numquam magnam aliquid! Explicabo voluptates aperiam adipisci recusandae ipsum tenetur deserunt doloremque aspernatur voluptatibus neque pariatur, illum repellat vero fugiat reprehenderit assumenda beatae aliquid perspiciatis at. Obcaecati, earum iure! Corporis delectus ducimus maiores ut explicabo illo atque fugiat repellendus. Repellendus, distinctio optio maxime nihil quia ex quod dicta blanditiis sint deserunt consequatur iusto minima magnam dolore labore excepturi minus, laboriosam similique explicabo officiis quasi.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ad ducimus officiis. Quas excepturi, hic tenetur nam quibusdam maiores possimus totam fugiat itaque ipsum earum beatae, mollitia, numquam suscipit cum?
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum corporis optio ipsa! Quos nisi eos provident ea ipsa quod asperiores nobis, illum repudiandae cupiditate aut inventore cumque eius officiis illo non beatae dolorem. Fuga laborum cumque, corrupti incidunt est praesentium. Sunt explicabo nam vel facilis, magnam debitis accusantium iure sit?
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, quidem laudantium. Nemo ad dolores veritatis accusamus non asperiores aspernatur deserunt ipsum quasi sapiente itaque assumenda, dolor dolorum earum quae tenetur totam sequi consequuntur dolorem. Eum reiciendis animi incidunt minus reprehenderit dicta, harum totam. Illo quisquam eos laboriosam ipsam iusto mollitia.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo praesentium, illum aperiam tempore cum aliquam eum voluptatum a fugiat enim, saepe commodi, sed iusto vel inventore quasi. Dignissimos, numquam incidunt. Voluptas aliquam asperiores inventore tenetur, magnam aperiam fuga! Magnam temporibus, et eaque maxime deleniti eius consequuntur impedit laborum voluptates odit molestias magni aut doloremque atque natus. Maiores alias iusto neque hic totam ab ipsa tempore id dolore laudantium nemo accusamus quas quam officiis harum assumenda incidunt commodi enim numquam, optio architecto facilis error. In sunt laboriosam iusto perspiciatis, possimus et cum nobis inventore suscipit ipsum ab, quod accusamus accusantium sequi.
-        </p>
+        
       </div>
     </div>
   </body>
