@@ -23,15 +23,33 @@
               <li class="nav-item">
                 <a class="nav-link text-o active fw-bold" aria-current="page" href="/">Home</a>
               </li>
+              {{#if isLogin}}
               <li class="nav-item">
                 <a class="nav-link text-o active" aria-current="page" href="/add-project">Add Project</a>
               </li>
+              {{/if}}
             </ul>
+
+
+            {{#if isLogin}}
+            <a href="#" class="btn text-black">Hallo, {{user.name}}</a>
+            <a href="/logout" class="btn text-black mx-3">Logout</a>
+            {{else}}
+            <a href="/register" class="btn text-black">Register</a>
+            <a href="/login" class="btn text-black mx-3">Login</a>
+            {{/if}}
 
             <a href="/contact" class="btn bg-orange text-white px-3" style="color:white; background-color:rgb(4, 4, 67)">Contact</a>
           </div>
         </div>
     </nav>
+
+        {{#if messages.success}}
+          <div style="text-align: center;" class="alert alert-success alert-dismissible fade show" role="alert">
+            {{messages.success}}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {{/if}}
 
     
     <div class="card mb-3" style=" height: 500px; max-width: 1024px; box-shadow: 0px 0px 18px rgb(214, 213, 213); margin: 50px auto;">
@@ -105,8 +123,17 @@
               <h1 class="judul-project" style="text-align: center; margin-top: 50px;">  MY PROJECT</h1>
             </div>
 
+    {{#if isLogin}}
+    <div style="text-align: right; margin-right: 150px; margin-top:50px">
+      <a href="/add-project"
+        class="bg-orange" style="padding: 8px 20px; color:white; border-radius: 5px; text-decoration: none">Add
+        Project</a>
+    </div>
+    {{/if}}
+
       <div id="contents" class="project-list">
         <!-- dynamic content would be here -->
+
         {{#each dataProject}}
         <div class="project-list-item">
           <div class="project-image">

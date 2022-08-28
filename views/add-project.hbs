@@ -22,33 +22,43 @@
               <li class="nav-item">
                 <a class="nav-link text-o active" aria-current="page" href="/">Home</a>
               </li>
+            {{#if isLogin}}
               <li class="nav-item">
                 <a class="nav-link text-o active fw-bold" aria-current="page" href="/add-project">Add Project</a>
               </li>
+              {{/if}}
             </ul>
+
+            {{#if isLogin}}
+            <a href="#" class="btn text-black">Hallo, {{user.name}}</a>
+            <a href="/logout" class="btn text-black mx-3">Logout</a>
+            {{else}}
+            <a href="/register" class="btn text-black">Register</a>
+            <a href="/login" class="btn text-black mx-3">Login</a>
+            {{/if}}
 
             <a href="/contact" class="btn bg-orange text-white px-3">Contact</a>
           </div>
         </div>
     </nav>
-
+  
     <div class="container-fluid d-flex justify-content-center align-items-center">
         <div class="container-form">
             <h2 class="mb-5 fw-bold text-center">ADD MY PROJECT</h2>
             <form action="/add-project" method="post">
                 <div class="mb-3">
                   <label for="inputTitle" class="form-label">Project Name</label>
-                  <input type="text" class="form-control border-success" id="inputTitle" name="inputTitle" aria-describedby="emailHelp">
+                  <input type="text" class="form-control border-success" id="inputTitle" name="inputTitle">
                 </div>
 
                 <div class="inputDate">
                   <div class="Startdate mb-4">
                   <label for="inputStartdate" class="form-label">Start Date</label>
-                  <input type="date" class="form-control border-success" id="inputStartdate" name="startdate" aria-describedby="emailHelp">
+                  <input type="date" class="form-control border-success" id="inputStartdate" name="startdate">
                   </div>
                   <div class="Enddate mb-4">
                   <label for="inputEnddate" class="form-label">End Date</label>
-                  <input type="date" class="form-control border-success" id="inputEnddate" name="enddate" aria-describedby="emailHelp">
+                  <input type="date" class="form-control border-success" id="inputEnddate" name="enddate">
                   </div>
                 </div>
 
@@ -76,7 +86,7 @@
               
                 <div class="mb-3">
                     <label for="inputImage" class="form-label" style="margin-top:20px;">Upload Image</label>
-                    <input type="file" class="form-control border-success" id="inputImage" aria-describedby="emailHelp">
+                    <input type="file" class="form-control border-success" id="inputImage">
                 </div>
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -84,7 +94,6 @@
                 </div>
             </form>
         </div>
-
     </div>
 
 
